@@ -11,7 +11,7 @@ flagged AS (
   SELECT
     income_bracket,
     units_sold,
-    (price >= 25000)::int AS is_premium   
+    (price >= 50000)::int AS is_premium   
   FROM joined
 )
 SELECT
