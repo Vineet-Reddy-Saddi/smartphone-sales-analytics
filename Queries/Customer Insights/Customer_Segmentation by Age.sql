@@ -19,9 +19,5 @@ SELECT
 FROM sales s
 JOIN age_buckets ab ON s.customer_id = ab.customer_id
 GROUP BY ab.age_group
-ORDER BY
-  CASE ab.age_group
-    WHEN '00-17' THEN 1 WHEN '18-25' THEN 2 WHEN '26-35' THEN 3
-    WHEN '36-45' THEN 4 WHEN '46-55' THEN 5 WHEN '56-65' THEN 6
-    WHEN '66+'   THEN 7 ELSE 8
-  END;
+ORDER BY ab.age_group
+

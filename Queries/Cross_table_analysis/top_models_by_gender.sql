@@ -13,5 +13,5 @@ ranked AS (
 )
 SELECT gender, model, units
 FROM ranked
-WHERE rnk <= 3           -- top 3 per gender
+WHERE rnk <= 3         
 ORDER BY gender, rnk;

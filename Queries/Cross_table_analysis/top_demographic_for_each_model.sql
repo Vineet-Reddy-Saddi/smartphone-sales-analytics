@@ -20,7 +20,7 @@ scored AS (
   FROM model_by_demo m
   JOIN model_tot mt USING (model)
 )
-SELECT *
+SELECT model, gender, income_bracket, units, pct_of_model
 FROM (
   SELECT
     model, gender, income_bracket, units, pct_of_model,
