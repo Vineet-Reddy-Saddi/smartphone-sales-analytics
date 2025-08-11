@@ -15,11 +15,11 @@ CREATE TABLE smartphones (
     rating DECIMAL(4,1),
     sim VARCHAR(100),
     processor VARCHAR(100),
-    ram VARCHAR(100), -- match CSV
+    ram VARCHAR(100), 
     battery VARCHAR(100),
     display VARCHAR(150),
     camera VARCHAR(150),
-    card VARCHAR(100), -- match CSV
+    card VARCHAR(100), 
     os VARCHAR(50)
 );
 
